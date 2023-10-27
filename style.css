@@ -16,6 +16,8 @@ body{
 }
 
 #navbar{
+    position: sticky;
+    top: .1px;
     text-align: center;
     background-color: #782852;
     padding: .25rem;
@@ -50,13 +52,65 @@ a:hover{
 #mypic{
     float: left;
     width: 10rem;
-    margin-top: 2.3rem;
-    margin-left: 2.2rem;
-    margin-right: 1.5rem;
+    margin-top: 2.4rem;
 }
 
 #footer{
     color: #AAAAAA;
     font-size: .7rem;
     text-align: center;
+}
+
+@media screen and (max-width: 954px){
+    #par{
+        margin-left: 20vw;
+        margin-right: 20vw
+    }
+
+    #mypic{    
+        margin-left: 20vw;
+        margin-right: 5vw;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #par{
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    #mypic{    
+        margin-left: 10vw;
+        margin-right: 5vw;
+    }
+}
+
+@media screen and (max-width: 400px){
+    #par{
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+
+    #mypic{    
+
+        float:none;
+        width: 19rem;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    #mypic{    
+        float:none;
+        width: 15rem;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    #mypic{    
+        float:none;
+        width: 12rem;
+        margin-bottom: 10px;
+    }
 }
